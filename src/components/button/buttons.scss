@@ -1,0 +1,14 @@
+.pill-button{
+    width: auto;
+    padding : 1rem 4rem;
+    border-radius: 99999px;
+    border : none;
+    background: #9966CC;
+    filter: drop-shadow(0 0 10px #9966CC );
+    transition: all 200ms ease-in-out;
+    &:hover{
+        background: #7d0febb3;
+        filter: drop-shadow(0 0 10px #7d0febb3 );
+    }
+}
+
