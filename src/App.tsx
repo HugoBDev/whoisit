@@ -10,14 +10,14 @@ const movie: Movie = {
   director: "Christopher Nolan",
   actors: ["Cillian Murphy", "Dwayne Jhonson"],
   movieType: "drama",
+  posterURL :"https://www.themoviedb.org/t/p/original/boAUuJBeID7VNp4L7LNMQs8mfQS.jpg"
 };
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <NavBar/>
         <MovieComponent movie={movie} />
-        <PillButton/>
+        {/* <PillButton/> */}
       </header>
     </div>
   );

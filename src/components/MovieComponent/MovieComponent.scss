@@ -1,0 +1,23 @@
+.movie-wrapper {
+  background: linear-gradient(150deg, grey, rgb(177, 177, 177));
+  mix-blend-mode: color-dodge;
+  border-radius: 1rem;
+  height: auto;
+  width: 24rem;
+  min-height: 56rem;
+
+  .poster-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 1rem 1rem 0 0;
+    padding: 1rem;
+    top: 0;
+    left: 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

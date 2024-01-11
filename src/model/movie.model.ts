@@ -3,5 +3,5 @@ export type Movie = {
     director : string, 
     actors : string[],
     movieType : string,
-    // posterURL : string
+    posterURL : string
 }
