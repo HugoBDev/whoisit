@@ -1,6 +1,6 @@
 import { Movie } from "../../model/movie.model";
 import React from "react";
-import "./MovieComponent.scss";
+import "../../styles/MovieComponent.scss";
 
 interface MovieComponentProps {
   movie: Movie;
@@ -8,13 +8,18 @@ interface MovieComponentProps {
 function MovieComponent({ movie }: MovieComponentProps) {
   return (
     <div className="movie-wrapper">
-      <div className="poster-img-wrapper">
-        <img src={movie.posterURL} alt="" />
+      <div id="img-container">
+        <img
+          src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/boAUuJBeID7VNp4L7LNMQs8mfQS.jpg"
+          alt="your_keyword"
+        />
       </div>
-      <h2>{movie.title}</h2>
-      <p>{movie.director}</p>
-      <p>{movie.actors}</p>
-      <p>{movie.movieType}</p>
+      <div className="infos">
+        <p>{movie.title}</p>
+        <p>{movie.director}</p>
+        <p>{movie.actors}</p>
+        <p>{movie.movieType}</p>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,18 @@
+.movie-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+#img-container{
+  max-width: 300px;
+  overflow: hidden;
+}
+img{
+  width: 100%;
+  object-fit: contain;
+}
