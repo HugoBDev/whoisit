@@ -14,11 +14,10 @@ function MovieComponent({ movie }: MovieComponentProps) {
           alt="your_keyword"
         />
       </div>
-      <div className="infos">
-        <p>{movie.title}</p>
-        <p>{movie.director}</p>
-        <p>{movie.actors}</p>
-        <p>{movie.movieType}</p>
+      <div className="movie-infos">
+        <h2 className="movie-title">{movie.title}</h2>
+        <p className="movie-release-year">{movie.releaseYear}</p>
+        <p className="movie-type">{movie.movieType}</p>
       </div>
     </div>
   );

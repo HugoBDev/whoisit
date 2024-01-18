@@ -7,8 +7,7 @@ import NavBar from "./components/NavBar/NavBar";
 
 const movie: Movie = {
   title: "Oppenheimer",
-  director: "Christopher Nolan",
-  actors: ["Cillian Murphy", "Dwayne Jhonson"],
+  releaseYear : 2023,
   movieType: "drama",
   posterURL :"https://www.themoviedb.org/t/p/original/boAUuJBeID7VNp4L7LNMQs8mfQS.jpg"
 };

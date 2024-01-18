@@ -2,17 +2,44 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #ee82ee;
+  font-family:  "Exo 2", sans-serif;
+  filter: drop-shadow(0 0 2rem #4d034d );
+  border-radius: 2rem;
 }
 
+.movie-title{
+  position: absolute;
+  bottom: 4rem;
+  left: 0.3rem;
+  margin: 0;
+  font-size: 2rem;
+  
+}
+.movie-release-year{
+  position: absolute;
+  bottom: 6rem;
+  left: 0.5rem;
+  margin: 0;
+  font-size: 1.5rem;
+}
 
-
-
+.movie-type{
+  position: absolute;
+  margin: 0;
+  bottom: 0.4rem;
+  left : 0.5rem;
+  font-size: 1.3rem;
+}
 
 #img-container{
   max-width: 300px;
   overflow: hidden;
+  max-height: 28rem;
+  border-radius: 2rem;
 }
 img{
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  
 }
