@@ -5,6 +5,7 @@ import { Movie } from "./model/movie.model";
 import PillButton from "./components/button/PillButton";
 import NavBar from "./components/NavBar/NavBar";
 
+
 const movie: Movie = {
   title: "Oppenheimer",
   releaseYear : 2023,
@@ -16,7 +17,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <MovieComponent movie={movie} />
-        {/* <PillButton/> */}
+        
       </header>
     </div>
   );
