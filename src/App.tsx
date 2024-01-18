@@ -4,21 +4,18 @@ import "./App.css";
 import { Movie } from "./model/movie.model";
 import PillButton from "./components/button/PillButton";
 import NavBar from "./components/NavBar/NavBar";
+import { apiKey, popular } from "./api/apiKey";
 
-
-const movie: Movie = {
-  title: "Oppenheimer",
-  releaseYear : 2023,
-  movieType: "drama",
-  posterURL :"https://www.themoviedb.org/t/p/original/boAUuJBeID7VNp4L7LNMQs8mfQS.jpg"
-};
 function App() {
+  const url = `${popular}?api_key=${apiKey}`;
+
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+
   return (
     <div className="App">
-      <header className="App-header">
-        <MovieComponent movie={movie} />
-        
-      </header>
+      <header className="App-header"></header>
     </div>
   );
 }

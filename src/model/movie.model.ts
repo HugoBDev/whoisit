@@ -1,6 +1,7 @@
 export type Movie = {
+    id:number,
     title : string, 
     movieType : string,
-    posterURL : string
-    releaseYear : number
+    poster_path : string
+    release_date : string
 }
