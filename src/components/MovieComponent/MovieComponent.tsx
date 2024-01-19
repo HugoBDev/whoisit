@@ -9,15 +9,12 @@ function MovieComponent({ movie }: MovieComponentProps) {
   return (
     <div className="movie-wrapper">
       <div id="img-container">
-        <img
-          src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/boAUuJBeID7VNp4L7LNMQs8mfQS.jpg"
-          alt="your_keyword"
-        />
+        <img src={movie.poster_path} alt="movie-poster" />
       </div>
       <div className="movie-infos">
         <h2 className="movie-title">{movie.title}</h2>
-        <p className="movie-release-year">{movie.releaseYear}</p>
-        <p className="movie-type">{movie.movieType}</p>
+        <p className="movie-release-date">{movie.release_date}</p>
+        <div className="bottom-gradient"></div>
       </div>
     </div>
   );
