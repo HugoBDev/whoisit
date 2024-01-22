@@ -7,42 +7,18 @@ import NavBar from "./components/NavBar/NavBar";
 import { apiKey, popular } from "./api/apiKey";
 import MovieGenreAPI from "./api/movieGenre.api";
 import MovieAPI from "./api/movie.api";
+import getGenresByIds from "./services/genre.service";
+
 
 function App() {
   const [movieList, setMovieList] = useState<Movie[]>([]);
-  const movieGenresAPI = new MovieGenreAPI();
   const movieAPI = new MovieAPI();
 
-  //? 1. Recuperer les genres et les stocker dans un tableau
-  //? 2. Chercher les films
-  //? 3. ForEach movie, chercher les genres dans le tableau et s'ils existent les renders
-  let movieGenreList: any[] = [];
-  movieGenresAPI
-    .getMovieGenres()
-    .then((data) => {
-      movieGenreList = data.genres;
-      console.log(movieGenreList);
-    })
-    .catch((error) => console.log(error));
-
-  function getGenresByIds(idList: number[]): string[] {
-    let genreNames: string[] = [];
-
-    idList.forEach((id) => {
-      movieGenreList.map((genre) => {
-        if (id === genre.id) {
-          genreNames.push(genre.name);
-        }
-      });
-    });
-    console.log(genreNames);
-    
-    return genreNames;
-  }
-
+  
+ 
   useEffect(() => {
     movieAPI.getPopularMovie().then((data) => {
-      console.log(movieGenreList);
+      
 
       const movies = data.results.map((el: any) => ({
         id: el.id,
