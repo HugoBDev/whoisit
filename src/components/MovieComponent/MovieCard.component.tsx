@@ -2,7 +2,8 @@ import { Movie } from "../../model/movie.model";
 import React from "react";
 import "../../styles/MovieComponent.scss";
 import MovieAPI from "../../api/movie.api";
-import { error } from "console";
+import PillButton from "../button/PillButton";
+
 
 const movieAPI = new MovieAPI();
 interface MovieComponentProps {
@@ -22,7 +23,7 @@ function MovieCardComponent({ movie }: MovieComponentProps) {
       </div>
       <div className="movie-infos">
         <h2 className="movie-title">{movie.title}</h2>
-        <p className="movie-genres">{movie.genres}</p>
+        <PillButton  label={movie.genres[0]}></PillButton>
         <p className="movie-release-date">{movie.release_date}</p>
         <div className="bottom-gradient"></div>
       </div>

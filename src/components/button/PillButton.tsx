@@ -1,10 +1,10 @@
-import "../../styles/button.scss"
+import "../../styles/buttons.scss"
 import React from "react";
 
-const PillButton = () => {
+const PillButton = ({ label }: { label: string }) => {
   return (
     <div>
-      <button className="pill-button"></button>
+      <button className="pill-button">{label}</button>
     </div>
   );
 };

@@ -1,11 +1,11 @@
 import { resolve } from "path";
-import { apiKey, popular, apiURL } from "./apiKey";
+import { apiKey, popular, topRatedMovies, apiURL } from "./apiKey";
 //*class = livre de recettes, function ou method (inside of it) = recettes
 
 class MovieAPI {
   getPopularMovie(): Promise<any> {
     return new Promise((resolve, reject) => {
-      fetch(popular)
+      fetch(topRatedMovies)
         .then((res) => res.json())
         .then((data) => resolve(data))
         .catch((error) => reject(error));

@@ -24,6 +24,8 @@ movieGenreAPI
  */
 function getGenresByIds(idList: number[]): string[] {
   let genreNames: string[] = [];
+  
+
 
   idList.forEach((id) => {
     movieGenreList.map((genre) => {
@@ -32,7 +34,7 @@ function getGenresByIds(idList: number[]): string[] {
       }
     });
   });
-  console.log(genreNames);
+  
 
   return genreNames;
 }
