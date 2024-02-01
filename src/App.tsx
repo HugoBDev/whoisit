@@ -18,8 +18,6 @@ function App() {
  
   useEffect(() => {
     movieAPI.getPopularMovie().then((data) => {
-      
-
       const movies = data.results.map((el: any) => ({
         id: el.id,
         title: el.title,

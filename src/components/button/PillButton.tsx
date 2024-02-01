@@ -1,11 +1,9 @@
 import "../../styles/buttons.scss"
 import React from "react";
 
-const PillButton = ({ label }: { label: string }) => {
+const PillButton = () => {
   return (
-    <div>
-      <button className="pill-button">{label}</button>
-    </div>
+      <button className="pill-button"></button>
   );
 };
 

@@ -23,7 +23,7 @@ function MovieCardComponent({ movie }: MovieComponentProps) {
       </div>
       <div className="movie-infos">
         <h2 className="movie-title">{movie.title}</h2>
-        <PillButton  label={movie.genres[0]}></PillButton>
+        <PillButton/>
         <p className="movie-release-date">{movie.release_date}</p>
         <div className="bottom-gradient"></div>
       </div>
